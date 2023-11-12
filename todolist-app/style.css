@@ -63,6 +63,7 @@
 }
 
 .list-container li {
+    margin-top: 25px;
     list-style: none;
     font-size: 18px;
     padding: 15px 8px 12px 50px;
@@ -110,4 +111,70 @@
 
 span:hover {
     background-color: #edeef0;
+}
+
+@media (max-width: 700px) { 
+
+
+    .todo-section {
+        padding: 40px 25px 70px;
+        border-radius: 10px;
+        width: 100%;
+        margin-bottom: 25px;
+        max-width: 550px;
+        min-width: 200px;
+        background: #fff;
+    }
+    
+    .list-container {
+        transform: translateY(45px);
+    }
+
+    .todo-section h1 {
+        color: rgb(41, 148, 255);
+        display: flex;
+        align-items: center;
+    }
+    
+    .todo-section img {
+        width: 40px;
+        margin-right: 4px;
+    }
+    .row {
+        margin-top: 0;
+        background-color: #fff;
+        border-radius: 0;
+        margin-top: 20px;
+        padding-left: 0;
+        height: 80px;
+        display: block;
+        background-color: #edeef0;
+        border-radius: 30px;
+        width: 100%;
+    }
+    .row input {
+        flex: 1;
+        margin-top: 25px;
+        outline: none;
+        border: none;
+        font-size: 18px;
+        background-color: transparent;
+        padding: 5px;
+        padding-left: 20px;
+        width: 100%;
+    }
+    .row button {
+    
+        transform: translateY(25px);
+        outline: none;
+        border: none;
+        background: linear-gradient(135deg, rgb(39, 169, 251), rgb(198, 226, 248));
+        padding: 16px 50px;
+        border-radius: 40px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 20px;
+        color: #fff;
+        font-family: 'High Tower Text';
+    }
 }
